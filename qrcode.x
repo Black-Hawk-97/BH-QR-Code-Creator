@@ -1,0 +1,101 @@
+#!/bin/bash
+printf '\033[8;30;125t'
+clear
+BLACK=$(tput setaf 0)
+RED=$(tput setaf 1)
+GREEN=$(tput setaf 2)
+YELLOW=$(tput setaf 3)
+LIME_YELLOW=$(tput setaf 190)
+POWDER_BLUE=$(tput setaf 153)
+BLUE=$(tput setaf 4)
+MAGENTA=$(tput setaf 5)
+CYAN=$(tput setaf 6)
+WHITE=$(tput setaf 7)
+BRIGHT=$(tput bold)
+NORMAL=$(tput sgr0)
+BLINK=$(tput blink)
+REVERSE=$(tput smso)
+UNDERLINE=$(tput smul)
+if [ $# == "1" ] || [ $# == "2" ] || [ $# == "3" ] || [ $# == "4" ] || [ $# == "5" ] || [ $# == "6" ] || [ $# == "7" ] || [ $# == "8" ] || [ $# == "9" ] || [ $# == "10" ]; then
+echo
+echo
+echo $GREEN
+cat << EndOfMessage
+	      ██████╗ ██╗  ██╗       ██████╗ ██████╗        ██████╗██████╗ ███████╗ █████╗ ████████╗ ██████╗ ██████╗ 
+	      ██╔══██╗██║  ██║      ██╔═══██╗██╔══██╗      ██╔════╝██╔══██╗██╔════╝██╔══██╗╚══██╔══╝██╔═══██╗██╔══██╗
+	      ██████╔╝███████║█████╗██║   ██║██████╔╝█████╗██║     ██████╔╝█████╗  ███████║   ██║   ██║   ██║██████╔╝
+	      ██╔══██╗██╔══██║╚════╝██║▄▄ ██║██╔══██╗╚════╝██║     ██╔══██╗██╔══╝  ██╔══██║   ██║   ██║   ██║██╔══██╗
+	      ██████╔╝██║  ██║      ╚██████╔╝██║  ██║      ╚██████╗██║  ██║███████╗██║  ██║   ██║   ╚██████╔╝██║  ██║
+	      ╚═════╝ ╚═╝  ╚═╝       ╚══▀▀═╝ ╚═╝  ╚═╝       ╚═════╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝
+										               Coded By : Black Hawk
+EndOfMessage
+echo $YELLOW $BRIGHT
+ran=$RANDOM
+case $# in
+1)
+wget "https://chart.googleapis.com/chart?chl=$1&chs=200x200&cht=qr&chld=H|0" -O /home/$(uname -a | awk '{print $2}')/Desktop/BH-QR-$ran.png
+;;
+2)
+wget "https://chart.googleapis.com/chart?chl=$1 $2&chs=200x200&cht=qr&chld=H|0" -O /home/$(uname -a | awk '{print $2}')/Desktop/BH-QR-$ran.png
+;;
+3)
+wget "https://chart.googleapis.com/chart?chl=$1 $2 $3&chs=200x200&cht=qr&chld=H|0" -O /home/$(uname -a | awk '{print $2}')/Desktop/BH-QR-$ran.png
+;;
+4)
+wget "https://chart.googleapis.com/chart?chl=$1 $2 $3 $4&chs=200x200&cht=qr&chld=H|0" -O /home/$(uname -a | awk '{print $2}')/Desktop/BH-QR-$ran.png
+;;
+5)
+wget "https://chart.googleapis.com/chart?chl=$1 $2 $3 $4 $5&chs=200x200&cht=qr&chld=H|0" -O /home/$(uname -a | awk '{print $2}')/Desktop/BH-QR-$ran.png
+;;
+6)
+wget "https://chart.googleapis.com/chart?chl=$1 $2 $3 $4 $5 $6&chs=200x200&cht=qr&chld=H|0" -O /home/$(uname -a | awk '{print $2}')/Desktop/BH-QR-$ran.png
+;;
+7)
+wget "https://chart.googleapis.com/chart?chl=$1 $2 $3 $4 $5 $6 $7&chs=200x200&cht=qr&chld=H|0" -O /home/$(uname -a | awk '{print $2}')/Desktop/BH-QR-$ran.png
+;;
+8)
+wget "https://chart.googleapis.com/chart?chl=$1 $2 $3 $4 $5 $6 $7 $8&chs=200x200&cht=qr&chld=H|0" -O /home/$(uname -a | awk '{print $2}')/Desktop/BH-QR-$ran.png
+;;
+9)
+wget "https://chart.googleapis.com/chart?chl=$1 $2 $3 $4 $5 $6 $7 $8 $9&chs=200x200&cht=qr&chld=H|0" -O /home/$(uname -a | awk '{print $2}')/Desktop/BH-QR-$ran.png
+;;
+10)
+wget "https://chart.googleapis.com/chart?chl=$1 $2 $3 $4 $5 $6 $7 $8 $9 $10&chs=200x200&cht=qr&chld=H|0" -O /home/$(uname -a | awk '{print $2}')/Desktop/BH-QR-$ran.png
+;;
+esac
+clear
+echo
+echo $NORMAL
+echo $GREEN
+cat << EndOfMessage
+              ██████╗ ██╗  ██╗       ██████╗ ██████╗        ██████╗██████╗ ███████╗ █████╗ ████████╗ ██████╗ ██████╗ 
+              ██╔══██╗██║  ██║      ██╔═══██╗██╔══██╗      ██╔════╝██╔══██╗██╔════╝██╔══██╗╚══██╔══╝██╔═══██╗██╔══██╗
+              ██████╔╝███████║█████╗██║   ██║██████╔╝█████╗██║     ██████╔╝█████╗  ███████║   ██║   ██║   ██║██████╔╝
+              ██╔══██╗██╔══██║╚════╝██║▄▄ ██║██╔══██╗╚════╝██║     ██╔══██╗██╔══╝  ██╔══██║   ██║   ██║   ██║██╔══██╗
+              ██████╔╝██║  ██║      ╚██████╔╝██║  ██║      ╚██████╗██║  ██║███████╗██║  ██║   ██║   ╚██████╔╝██║  ██║
+              ╚═════╝ ╚═╝  ╚═╝       ╚══▀▀═╝ ╚═╝  ╚═╝       ╚═════╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝
+                                                                                               Coded By : Black Hawk
+EndOfMessage
+echo $CYAN $BRIGHT
+echo "      Done Saved At /home/$(uname -a | awk '{print $2}')/BH-QR-$ran.png"
+echo $NORMAL
+else
+echo
+echo
+echo $GREEN
+cat << EndOfMessage
+              ██████╗ ██╗  ██╗       ██████╗ ██████╗        ██████╗██████╗ ███████╗ █████╗ ████████╗ ██████╗ ██████╗ 
+              ██╔══██╗██║  ██║      ██╔═══██╗██╔══██╗      ██╔════╝██╔══██╗██╔════╝██╔══██╗╚══██╔══╝██╔═══██╗██╔══██╗
+              ██████╔╝███████║█████╗██║   ██║██████╔╝█████╗██║     ██████╔╝█████╗  ███████║   ██║   ██║   ██║██████╔╝
+              ██╔══██╗██╔══██║╚════╝██║▄▄ ██║██╔══██╗╚════╝██║     ██╔══██╗██╔══╝  ██╔══██║   ██║   ██║   ██║██╔══██╗
+              ██████╔╝██║  ██║      ╚██████╔╝██║  ██║      ╚██████╗██║  ██║███████╗██║  ██║   ██║   ╚██████╔╝██║  ██║
+              ╚═════╝ ╚═╝  ╚═╝       ╚══▀▀═╝ ╚═╝  ╚═╝       ╚═════╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝
+                                                                                               Coded By : Black Hawk
+EndOfMessage
+echo
+echo
+echo $RED
+echo "              Usage : qrcode <Your Text>"
+echo $NORMAL
+exit 0
+fi
