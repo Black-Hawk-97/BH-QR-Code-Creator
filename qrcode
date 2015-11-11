@@ -77,7 +77,7 @@ cat << EndOfMessage
                                                                                                Coded By : Black Hawk
 EndOfMessage
 echo $CYAN $BRIGHT
-echo "      Done Saved At /home/$(uname -a | awk '{print $2}')/BH-QR-$ran.png"
+echo "      Done Saved At /home/$(uname -a | awk '{print $2}')/Desktop/BH-QR-$ran.png"
 echo $NORMAL
 else
 echo
